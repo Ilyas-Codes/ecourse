@@ -1,5 +1,6 @@
 export default {
   en: {
+    name: "English",
     welcomeTo: "Welcome to",
     pleaseLogin: "Please login to your account",
     loginFailed: "Login failed. Please check your credentials and try again",
@@ -42,6 +43,7 @@ export default {
     notStarted: "Not Started",
   },
   fr: {
+    name: "France",
     welcomeTo: "Bienvenue à",
     pleaseLogin: "Veuillez vous connecter à votre compte",
     loginFailed:
@@ -85,6 +87,7 @@ export default {
     notStarted: "Non commencé",
   },
   it: {
+    name: "Italian",
     welcomeTo: "Benvenuto su",
     pleaseLogin: "Effettua il login al tuo account",
     loginFailed: "Accesso fallito. Controlla le tue credenziali e riprova",
@@ -127,6 +130,7 @@ export default {
     notStarted: "Non iniziato",
   },
   ro: {
+    name: "Romanian",
     welcomeTo: "Bine ai venit la",
     pleaseLogin: "Conectează-te la contul tău",
     loginFailed: "Conectare eșuată. Verifică-ți credențialele și încearcă din nou",
@@ -166,4 +170,47 @@ export default {
     resources: "Resurse",
     notStarted: "Neînceput"
   },
+  th: {
+    name: "Thai",
+    welcomeTo: "ยินดีต้อนรับสู่",
+    pleaseLogin: "โปรดเข้าสู่ระบบ",
+    loginFailed: "Login failed. Please check your credentials and try again",
+    username: "Username / email",
+    usernameNotValid:
+      "Username ต้องมี 3 ตัวอักษรขึ้นไปและไม่มีช่องว่าง",
+    password: "รหัสผ่าน",
+    passwordNotValid: "รหัสผ่านต้องมี 8 ตัวอักษรขึ้นไป",
+    login: "เข้าสู่ระบบ",
+    loggingIn: "กำลังเข้าสู่ระบบ...",
+    alreadyLogin: "เข้าสู่ระบบแล้ว?",
+    myCourses: "คอร์สของฉัน",
+    inProgress: "อยู่ในการดำเนินการ",
+    nextLesson: "บทเรียนต่อไป",
+    summary: "สรุป",
+    downloads: "ดาวน์โหลด",
+    noCourseAssigned: "ไม่มีคอร์สที่คุณได้รับมอบหมาย",
+    courseAssignedCheck:
+      "หลักสูตรที่มอบหมายให้คุณจะแสดงที่นี่ กรุณาตรวจสอบหน้านี้เป็นระยะเพื่อให้แน่ใจว่าคุณจะไม่พลาดหลักสูตรใด ๆ",
+    view: "ดู",
+    startCourse: "เริ่มคอร์ส",
+    continueCourse: "เรียนต่อ",
+    openCourse: "เปิดคอร์ส",
+    resetProgress: "เริ่ม Progress ใหม่",
+    lessonInThisCourse: "บทเรียนในคอร์สนี้",
+    lessonsInThisCourse: "บทเรียนในคอร์สนี้",
+    completed: "เสร็จสิ้น",
+    inProgress: "อยู่ในการดำเนินการ",
+    courseAssigned: "หลักสูตรที่มอบหมายให้คุณ",
+    coursesAssigned: "หลักสูตรที่มอบหมายให้คุณ",
+    noLessonsFound: "ไม่พบบทเรียน",
+    findLesson: "ค้นหาบทเรียน...",
+    search: "ค้นหา",
+    COURSES: "หลักสูตร",
+    RESOURCES: "ทรัพยากร",
+    completeCourse: "ดำเนินการเรียนต่อในหลักสูตร",
+    courseCompleted: "หลักสูตรที่เสร็จสมบูรณ์",
+    previousLesson: "บทเรียนก่อนหน้า",
+    resources: "ทรัพยากร",
+    notStarted: "ยังไม่เริ่ม",
+    },
 };
