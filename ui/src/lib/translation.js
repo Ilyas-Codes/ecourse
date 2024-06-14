@@ -1,5 +1,6 @@
 export default {
   en: {
+    name: "English",
     welcomeTo: "Welcome to",
     pleaseLogin: "Please login to your account",
     loginFailed: "Login failed. Please check your credentials and try again",
@@ -42,6 +43,7 @@ export default {
     notStarted: "Not Started",
   },
   fr: {
+    name: "France",
     welcomeTo: "Bienvenue à",
     pleaseLogin: "Veuillez vous connecter à votre compte",
     loginFailed:
@@ -85,6 +87,7 @@ export default {
     notStarted: "Non commencé",
   },
   it: {
+    name: "Italian",
     welcomeTo: "Benvenuto su",
     pleaseLogin: "Effettua il login al tuo account",
     loginFailed: "Accesso fallito. Controlla le tue credenziali e riprova",
@@ -127,6 +130,7 @@ export default {
     notStarted: "Non iniziato",
   },
   ro: {
+    name: "Romanian",
     welcomeTo: "Bine ai venit la",
     pleaseLogin: "Conectează-te la contul tău",
     loginFailed: "Conectare eșuată. Verifică-ți credențialele și încearcă din nou",
@@ -165,5 +169,48 @@ export default {
     previousLesson: "Lecția anterioară",
     resources: "Resurse",
     notStarted: "Neînceput"
+  },
+  th: {
+    name: "Thai",
+    welcomeTo: "อะชิอะชิ",
+    pleaseLogin: "Please login to your account",
+    loginFailed: "Login failed. Please check your credentials and try again",
+    username: "Username / email",
+    usernameNotValid:
+      "Username must be 3+ characters and cannot contain spaces",
+    password: "Password",
+    passwordNotValid: "Password must be 8+ characters",
+    login: "Login",
+    loggingIn: "Logging in...",
+    alreadyLogin: "Logged in already?",
+    myCourses: "My Courses",
+    inProgress: "In Progress",
+    nextLesson: "Next Lesson",
+    summary: "Summary",
+    downloads: "Downloads",
+    noCourseAssigned: "No courses assigned to you!",
+    courseAssignedCheck:
+      "Courses assigned to you will show up here, please check on this page from time to time to ensure you never miss a course.",
+    view: "View",
+    startCourse: "อะชิอะชิ",
+    continueCourse: "Continue Course",
+    openCourse: "Open Course",
+    resetProgress: "Reset Progress",
+    lessonInThisCourse: "Lesson in this Course",
+    lessonsInThisCourse: "Lessons in this Course",
+    completed: "อะชิอะชิ",
+    inProgress: "อะชิอะชิ",
+    courseAssigned: "Course assigned to you",
+    coursesAssigned: "Course assigned to you",
+    noLessonsFound: "No Lesson found",
+    findLesson: "Find Lesson...",
+    search: "Search",
+    COURSES: "COURSES",
+    RESOURCES: "RESOURCES",
+    completeCourse: "Complete Course",
+    courseCompleted: "Course Completed",
+    previousLesson: "Previous Lesson",
+    resources: "Resources",
+    notStarted: "Not Started",
   },
 };

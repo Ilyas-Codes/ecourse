@@ -9,6 +9,7 @@
   import { isSidebarVisible, isSearchVisible, isLoading } from "../lib/store";
   import { pb, courses, resources, currentUser } from "../lib/pocketbase";
   import { navigate, useLocation } from "svelte-routing";
+  import LanguageSelector from './LanguageSelector.svelte';
   import { t } from "../lib/i18n";
 
   export let isCoursesVisible = true;
@@ -56,6 +57,7 @@
         />
       </button>
     </div>
+    
 
     {#if $isLoading}
       <div
@@ -189,5 +191,9 @@
         </button>
       </div>
     {/if}
+
+    <LanguageSelector />
   </aside>
 {/if}
+
+
