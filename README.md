@@ -31,7 +31,29 @@ Use the following credentials for testing the demo:
 
 ## Getting Started
 
-Get started by running the project locally, simply follow these steps:
+### Development Environment
+
+1. Clone/download the repo.
+2. Ensure Docker is installed and running on your system.
+3. Start the development environment with Docker:
+
+```bash
+docker compose -f docker-compose.dev.yml up --build -d
+```
+This command will start both the PocketBase backend and the Vite development server for the frontend.
+
+### Production Environment
+
+1. Set the VITE_PROD_PB_URL in the .env file to the server URL where your PocketBase instance will be hosted.
+2. Build and deploy the project using Docker:
+```bash
+docker compose up --build -d
+```
+This will build and deploy both the backend and frontend using the production-ready settings.
+
+### Manual Deployment
+
+If you prefer not to use Docker, you can manually deploy the application:
 
 1. Clone/download the repo
 

@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@iconify/svelte": "^3.1.6",
+    "@iconify/svelte": "4.0.2",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
@@ -17,7 +17,7 @@
     "postcss-pxtorem": "^6.0.0",
     "prettier": "^3.1.1",
     "prettier-plugin-svelte": "^3.1.2",
-    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prettier-plugin-tailwindcss": "0.6.6",
     "rfs": "^10.0.0",
     "svelte": "^4.2.8",
     "svelte-routing": "^2.12.0",

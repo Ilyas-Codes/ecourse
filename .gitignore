@@ -1,0 +1,4 @@
+.env
+pb/pb_public/*
+pb/LICENSE.md
+pb/pocketbase

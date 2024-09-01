@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  ecourse-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8090:8090" # PocketBase port
+      - "5173:5173" # Vite default port for dev server
+    volumes:
+      - ./pb:/app/pb
+      - ./ui:/app/ui
+      - /app/ui/node_modules # Avoid overwriting node_modules in the container
+    command: sh -c "/app/entrypoint.dev.sh"

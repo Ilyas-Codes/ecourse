@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  ecourse-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8090:5173"
+    restart: unless-stopped
+    environment:
+      VITE_PROD_PB_URL: http://127.0.0.1:8090

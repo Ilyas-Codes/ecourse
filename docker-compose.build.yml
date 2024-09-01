@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  ecourse-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
