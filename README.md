@@ -44,10 +44,21 @@ cd pb
 ./pocketbase serve
 ```
 
-4. Start the Vite server
+4. Change to `ui` dir
 
 ```bash
-cd ui
+cd ../ui
+```
+
+5. Create `.env` file
+
+```bash
+cp .env.example .env
+```
+
+6. Start the Vite server
+
+```bash
 npm install && npm run dev
 ```
 
@@ -72,29 +83,18 @@ npm run build
 
 ### Using Docker
 
-You can use the following Dockerfile to automate the steps above:
 
-```dockerfile
-FROM node:20.11.1-buster
+### Docker Run
 
-WORKDIR /
+```bash
+docker build -t ecourse .
+docker run -p 8090:8090 -v /your/storage/path/:/app/pb/pb_data ecourse
+```
 
-RUN git clone https://github.com/Ilyas-Codes/eCourse.git
+### Docker Compose
 
-ARG PB_VERSION=0.21.3
-ADD https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/pocketbase_${PB_VERSION}_linux_amd64.zip /tmp/pb.zip
-RUN unzip /tmp/pb.zip -d /eCourse/pb
-
-WORKDIR /eCourse/ui
-
-RUN sed -i 's/^VITE_PROD_PB_URL=.*/VITE_PROD_PB_URL=http:\/\/127.0.0.1:8090/' .env
-RUN npm install
-RUN npm run build
-RUN mv dist/* /eCourse/pb/pb_public
-
-EXPOSE 8090
-
-CMD ["/eCourse/pb/pocketbase", "serve", "--http=0.0.0.0:8090"]
+```bash
+docker compose up
 ```
 
 ## Feedback & Suggestions
